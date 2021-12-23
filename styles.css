@@ -1,0 +1,23 @@
+
+
+
+.header-bg-pic {    
+  /*  background: url("airbnb/assets/imgs/homepage/top.jpg") no-repeat center center fixed;
+   background-position: cover; 
+      height: 600px; */
+
+     
+      width: 100%;
+  
+}
+
+.header-bg-pic img {
+     width: 100%; 
+}
+
+@media screen and (min-width: 1127px) {
+    .header-bg-pic img {
+     width: 90%; 
+    }    
+
+}
