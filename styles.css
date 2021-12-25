@@ -3,6 +3,7 @@
   width: 100%;
   position: absolute;    
   top: 0px;
+  overflow: hidden;
 }
 
 
@@ -33,6 +34,21 @@
 
 .wrapper-01 {
     margin-top: 30vh;
+}
+
+.wrapper-01 button {
+    background-color: white;
+    border: none;
+    border-radius: 2rem !important;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: purple
+    
+}
+
+.wrapper-01 p {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
