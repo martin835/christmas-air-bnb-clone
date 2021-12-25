@@ -1,23 +1,51 @@
 
-
-
 .header-bg-pic {    
-  /*  background: url("airbnb/assets/imgs/homepage/top.jpg") no-repeat center center fixed;
-   background-position: cover; 
-      height: 600px; */
-
-     
-      width: 100%;
-  
+  width: 100%;
+  position: absolute;    
+  top: 0px;
 }
 
-.header-bg-pic img {
-     width: 100%; 
+
+
+.header-bg-pic picture {
+  z-index: -1;  
+}
+
+.search-wrapper {
+    margin-top: 1rem;
+    z-index: 1;  
+}
+
+.search-wrapper button {
+    width: 80%;
+    background-color: white;
+    border: none;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.search-wrapper i {
+    color: rgb(255, 56, 92);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.wrapper-01 {
+    margin-top: 30vh;
+}
+
+
+@media screen and (min-width: 743px) {
+    .header-bg-pic img {
+    width: 100%;
+}
+    
 }
 
 @media screen and (min-width: 1127px) {
-    .header-bg-pic img {
-     width: 90%; 
+    .header-bg-pic picture  {
+         width: 90%; 
     }    
 
 }
