@@ -51,17 +51,48 @@
     font-weight: bold;
 }
 
+.explore-nearby {
+    margin-top: 183px;
+    
+    
+}
+
+.card-small img {
+    max-width: 100px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
 
 @media screen and (min-width: 743px) {
     .header-bg-pic img {
     width: 100%;
 }
+
+    .wrapper-01 {
+    margin-top: 15%;
+}
+
+
     
 }
 
 @media screen and (min-width: 1127px) {
     .header-bg-pic picture  {
          width: 90%; 
-    }    
+    } 
+    
+    
 
+}
+
+@media screen and (min-width: 1400px) {
+ 
+    
+}
+
+
+@media screen and (min-width: 2000px) {
+
+    
 }
