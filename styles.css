@@ -52,15 +52,27 @@
 }
 
 .explore-nearby {
-    margin-top: 183px;
-    
-    
+    margin-top: 183px;   
 }
 
 .card-small img {
     max-width: 100px;
     margin-top: 30px;
     border-radius: 15px;
+}
+
+.live-anywhere {
+    margin-top: 50px;
+}
+
+.live-anywhere img {
+    max-width: 200px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.live-anywhere p {
+    font-weight:500;
 }
 
 
@@ -87,7 +99,9 @@
 }
 
 @media screen and (min-width: 1400px) {
- 
+ .explore-nearby {
+    margin-top: 383px;   
+}
     
 }
 
