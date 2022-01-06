@@ -138,13 +138,33 @@
     font-weight: bold;
     background-color: #f8f8f8;
     border-radius: 15px;
+}
 
+.span-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.three-dots {
+    background-color: #e9ecef;
+    padding: 0 1rem;
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 370px) {
     .try-hosting-wrapper {
         font-size: 0.6rem;
         top: 5px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .first-column {
+        height: 40vh;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
