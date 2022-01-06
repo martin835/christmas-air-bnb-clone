@@ -6,6 +6,16 @@
   overflow: hidden;
 }
 
+.landscape-nav-top {
+    color:white;
+}
+
+.account-menu {
+    background-color: white;
+    color: grey;
+    border-radius: 14px;
+}
+
 
 
 .header-bg-pic picture {
