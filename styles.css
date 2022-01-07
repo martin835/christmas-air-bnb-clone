@@ -1,3 +1,4 @@
+/* HOME PAGE STYLES */
 
 .header-bg-pic {    
   width: 100%;
@@ -275,4 +276,149 @@
 @media screen and (min-width: 2000px) {
 
     
+}
+
+/* SEARCH PAGE STYLES */
+
+.landscape-nav-top-search {
+    color: #212529; 
+}
+
+.air-logo-search {
+    color: #ff385c;
+    font-size: 1.5rem;
+}
+
+.account-menu-search {
+    border: 1px solid #808080;
+    border-radius: 18px;
+}
+
+.text-right-search {
+    font-weight: bold ;
+}
+
+.filter-wrapper img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.3rem;
+    display: none; 
+}
+
+.filter-wrapper:hover img {
+    display: block;
+}
+
+.filter-wrapper:hover {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.filter-wrapper span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.filter-wrapper {
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    padding-bottom: 0.6rem;
+}
+
+.filter-left-search {
+    width: 855px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.filter-right-search {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border: 1px solid grey;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+}
+
+.search-card img {
+    border-radius: 15px;
+}
+
+
+@media screen and (min-width: 992px) {
+        .search-card img {
+        width: 200px !important;
+        max-width: 200px !important;
+        height: 200px !important;
+        border-radius: 15px;
+        object-fit: cover !important;
+        display: block !important;
+    }
+}
+
+.search-card {
+    font-size: 0.7rem;
+}
+
+.card-image-wrapper {
+    position: relative;
+}
+
+.heart-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    opacity: 0.8;
+}
+
+.dots-wrapper {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: -10px
+}
+
+@media screen and (min-width: 992px) {
+        .heart-wrapper {
+        position: absolute;
+        top: 10px;
+        right: -25px;
+    }   
+}
+
+.decription-first-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.decription-left {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.description-right {
+    text-align: right;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 992px) {
+    .card-description{
+        width: 200px !important;
+    }
+    
+}
+
+.pagination-wrapper {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.enter-dates {
+    font-size: 0.7rem;
 }

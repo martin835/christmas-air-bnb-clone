@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/67d0306ae4.js" crossorigin="anonymous"></script>
+    <title>AirBnB Clone</title>
+  </head>
+  <body>
+
+        <div class="d-block">
+            <div class="container-xl landscape-nav-top-search">
+                <div class="row mt-3 justify-content-between">
+                    <div class="col-3 air-logo-search">
+                        <span><strong><i class="fab fa-airbnb"></i></strong></span>
+                        <span><strong>airbnb</strong></span>
+                    </div>
+                    <div class="col-6 d-flex justify-content-around">
+
+                    </div>
+                    <div class="col-3 text-right text-right-search">
+                        <span class="mr-2">Became o host</span>
+                        <span class="mr-2"><i class="bi bi-globe2"></i></span>
+                        <div class="d-lg-inline-block p-1 account-menu-search">
+                            <i class="bi bi-list pl-1"></i>
+                            <i class="bi bi-person-circle pl-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-9 d-flex flex-row flex-nowrap filter-left-search">
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/house.jpg" alt="">
+                        <span>Houseboats</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/tree.jpg" alt="">
+                        <span>Treehouses</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/beach.jpg" alt="">
+                        <span>Beachfront</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/castle.jpg" alt="">
+                        <span>Chalets</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/boat.jpg" alt="">
+                        <span>Boats</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/fence.jpg" alt="">
+                        <span>Yurts</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/castle.jpg" alt="">
+                        <span>Castles</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/sea.jpg" alt="">
+                        <span>Islands</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/farm.jpg" alt="">
+                        <span>Farms</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/fence.jpg" alt="">
+                        <span>Shipping containers</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/house.jpg" alt="">
+                        <span>Tiny homes</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/house.jpg" alt="">
+                        <span>Houseboats</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/house.jpg" alt="">
+                        <span>A-farms</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/house.jpg" alt="">
+                        <span>Domes</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/house.jpg" alt="">
+                        <span>Barns</span>
+                    </div>
+                    <div class="filter-wrapper d-flex flex-nowrap">
+                        <img src="airbnb/assets/imgs/search/nav-icons/house.jpg" alt="">
+                        <span>Campervans</span>
+                    </div>
+                </div>
+                <div class="col-3 d-flex justify-content-around">
+                    <div class="filter-right-search">
+                        <span>Anytime</span>
+                        <span><i class="bi bi-chevron-down"></i></span>
+                    </div>
+                    <div class="filter-right-search">
+                        <span>Guests</span>
+                        <span><i class="bi bi-chevron-down"></i></span>
+                    </div>
+                    <div class="filter-right-search">
+                        <span><i class="bi bi-sliders"></i></span>
+                        <span>Filters</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xl">
+            <div class="row mt-4 justify-content-around justify-content-lg-between lg-no-gutters">
+                <div class="col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 justify-content-around justify-content-lg-between lg-no-gutters">
+                <div class="col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 justify-content-around justify-content-lg-between lg-no-gutters">
+                <div class="col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 justify-content-around justify-content-lg-between lg-no-gutters">
+                <div class="col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="search-card">
+                        <div class="card-image-wrapper">
+                            <img src="airbnb/assets/imgs/search/first.jpg" class="img-fluid" alt="">
+                            <div class="heart-wrapper">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="dots-wrapper">
+                                <i class="bi bi-three-dots"></i>
+                            </div>                          
+                        </div>
+                        <div class="card-description">
+                            <div class="decription-first-line">
+                                <span class="decription-left">Joncherey, Bourgogne France</span>
+                                <span class="description-right"> $282 / night</span>
+                            </div>
+                            <div class="description-second-line">
+                                <span>261 miles away</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="pagination-wrapper d-flex justify-content-around">
+                        <div><i class="bi bi-chevron-left"></i></div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div><i class="bi bi-three-dots"></i></div>
+                        <div>15</div>
+                        <div><i class="bi bi-chevron-right"></i></div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-4">
+                    <p>1-20 of 300+ places to stay</p>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-4 enter-dates">
+                    <p>Enter dates to see full pricing. Additiona. fees apply. Taxes may be added.</p>
+                </div>
+            </div>
+        </div>
+    
+
+
+        <div class="footer">
+            <hr>            
+            <div class="container-xl">                
+                <div class="row">
+                    <div class="col-12 col-sm-3">
+                        <h6 class="mt-3">ABOUT</h6>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                    </div>
+                    <div class="w-100 d-sm-none px-3">
+                        <hr>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <h6 class="mt-3">ABOUT</h6>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                    </div>
+                    <div class="w-100 d-sm-none px-3">
+                        <hr>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <h6 class="mt-3">ABOUT</h6>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                    </div>
+                    <div class="w-100 d-sm-none px-3">
+                        <hr>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <h6 class="mt-3">ABOUT</h6>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                        <p>How Airbnb works</p>
+                    </div>
+                </div>
+                <div class="row footer-details">
+                    <div class="w-100 px-3"><hr></div>
+                    <div class="col-12 col-lg-7 text-center text-lg-left order-2 order-lg-1 my-3 my-lg-0">
+                        <span>2022 Airbnb, Inc.</span>
+                        <span>&#183;</span>
+                        <span>Privacy</span>
+                        <span>&#183;</span>
+                        <span>Terms</span>
+                        <span>&#183;</span>
+                        <span>Site map</span>
+                        <span>&#183;</span>
+                        <span>UK Modern Slavery Act</span>
+                        <span>&#183;</span>
+                        <span>Company details</span>
+                    </div>
+                    <div class="col-12 col-lg-5 text-center text-lg-right order-1 order-lg-2 footer-details-right">
+                        <span><i class="bi bi-globe2"></i></span>
+                        <span class="ml-0"><u>English(GB)</u></span>
+                        <span><i class="bi bi-currency-pound"></i></span>
+                        <span class="ml-0"><u>GB</u></span>
+                        <span><i class="bi bi-facebook"></i></span>
+                        <span><i class="bi bi-twitter"></i></span>
+                        <span><i class="bi bi-instagram"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+   
+   <!-- My JS -->
+
+   <script src="index.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+<body>
+    <!-- HTML & CSS EXERCISES -->
+
+    <!-- EXERCISE 1 
+     Implement the first image (1-Airbnb-homepage.png) following closely alignments, positioning, and layout 
+     hint: to achieve the main search component effect you should use inputs with no colors (transparent), composed together and style the div that wraps them instead. use input of different types (text, number, etc..)
+     for the "inspiration" section you can create just 3 rows of suggested destinations -->
+
+    <!-- EXERCISE 2 
+     Make it responsive! More importantly the mobile version should not create any issues. 
+     Make sure to respect the second image layout (2-Airbnb-homepage-mobile-view.png) -->
+
+    <!-- EXERCISE 3
+     Create the Search layout as seen in the (3-Search-page.png) image.
+     Use the assets provided for the picture. 
+     n.b.: We are not asking you to create a working pagination or navigation. Just replicate the layout precisely -->
+
+    <!-- #### EXTRA -->
+    
+    <!-- EXERCISE 4
+        Create the login modal in the search page. 
+        When the user clicks on the avatar (top-right corner), the login modal should appear over the search -->
+
+    <!-- EXERCISE 5 Implement the Host page (5-EXTRA-Host-page.png) using the assets provided -->
+
+
+
+    <script>
+    // #### JS EXERCISES
+
+    // EXERCISE 1
+    // Take the value from the city input field and display it in an H1 on the center of the Hero content, on top of the image.
+    // The letter should appear one by one while the user types them in the input.
+
+    // EXERCISE 2
+    // Create an array of objects for each city you can think of. Each one should look like the following:
+    //      {
+    //         city: "Barcellona",
+    //         img: "https://itk.ppke.hu/get/images/2078419/spanyolorsz%C3%A1g.jpg"
+    //      }
+
+    // EXERCISE 3
+    // We want to display the picture of the corresponding searched city as the new background of the hero section.
+    
+    // In the same place you took the input value, use -at the same time- a for loop to perform a check
+    // on the previously created array of city+img #### BEWARE: (no advanced methods allowed: only for loops and if statements).
+    
+    // Check if the searched city is found in any object in the array.
+    // If it's found, use the img property as the new source for the background image of the hero section.
+    
+    // What you should see in the end is: the image of the city as background and the name of the city as the H1 title on top of it.
+
+    // EXERCISE 4
+    // create new arrays with similar structure [{img: "http://...", text: "lorem ipsum"}, {...}, {...}]
+    // for every section in the homepage that has text+image and make it so
+    // that every section which contains img+text gets generated in a randomized order on every page refresh.
+
+    // EXERCISE 5
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
+    //
+    // Create a Date object via JavaScript and format it to have a date looking like this: "09/07/2021, 12:51:15"
+    // Apply it in a <span> above the <h1> to show to the user the date and time of the search, but instead of the comma, separate the two with an em dash: — like so: "09/07/2021 — 12:51:15"
+    // (you can create the em dash with a combination on the numpad that is: ALT + 0151)
+
+    // EXERCISE 6
+    // The search fields include: Location, Check-in date, Check-out date, Number of guests. You've displayed the first one in the H1 field on EX 1 already.
+    // Let's use the rest of the data in this way; when the user clicks the search button:
+    // - Create a list below the H1.
+    // - get the values from the date inputs and format them to display list items with the check-in & check-out dates as:
+    //      Check in: 25/07/2021
+    //      Check out: 30/07/2021
+    // - and the number of guests the user have selected in another list item.
+    //      Guests: 2
+
+    // EXERCISE 7
+    // On the "I'm flexible" button that you have in the page, attach the functionality to open a modal that displays
+    // a random city and image from the first array that you've created.
+
+    // #### EXTRA
+    // Create a working clock on the top-right corner of the website to display the current time to the user (hint: Date obj & setInterval)
+
+    // Create a countdown that displays the remaining time of an offer in the page (starting from 5 minutes),
+    // to give a sense of urgency to the user to book an appartment before the offer ends.
+    
+    // The countdown should appear in a modal after 1 minute from the page load.
+    // Display an alert when the time is up.
+
+    // Find a way to reuse the same modal with different information passed in, instead of creating multiple modals with different IDs.
+    </script>
+
+
+</body>
+
+</html>
