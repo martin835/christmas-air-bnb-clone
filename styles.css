@@ -4,6 +4,7 @@
   position: absolute;    
   top: 0px;
   overflow: hidden;
+  z-index: -2;
 }
 
 .landscape-nav-top {
@@ -16,9 +17,14 @@
     border-radius: 14px;
 }
 
+.air-logo {
+    font-size: 1.3rem;
+}
+
 .input-wrapper {
     background-color: white;
     color: black;
+    border-radius: 50px;
 }
 
 .input-wrapper input {
@@ -27,8 +33,9 @@
 
 .vl {
     height: 70%;
-    margin-top: 7px;
-    border-left: 3px solid grey;
+    margin-top: 10px;
+    border-left: 1px solid grey;
+    padding-right: 15px;
 
 }
 
@@ -66,7 +73,7 @@
 }
 
 .wrapper-01 {
-    margin-top: 30vh;
+    margin-top: 26vh;
 }
 
 .wrapper-01 button {
@@ -221,7 +228,7 @@
     }
 
     .wrapper-01 {
-        margin-top: 15%;
+        margin-top: 12%;
     }
 
 @media screen and (min-width: 992px) {
