@@ -32,6 +32,14 @@
     border: none;
 }
 
+.input-wrapper input:active {
+    outline: none;
+}
+
+.input-wrapper input:focus {
+    outline: none;
+}
+
 .vl {
     height: 70%;
     margin-top: 10px;
