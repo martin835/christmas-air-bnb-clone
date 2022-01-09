@@ -324,9 +324,7 @@ for (i = 0; i < 4; i++) {
     // a random city and image from the first array that you've created.
 
     let flexibleButton = document.getElementById("flexible-button");
-    console.log(flexibleButton);
-
-    flexibleButton.addEventListener("click", function() {
+        flexibleButton.addEventListener("click", function() {
         let randomNumber = Math.floor(Math.random() * cities.length);
         let cityName = document.getElementById("modal-title-city");
         let cityImage = document.getElementById("modal-picture");
@@ -334,3 +332,23 @@ for (i = 0; i < 4; i++) {
         cityImage.src = cities[randomNumber].img;
 
     });
+
+    // #### EXTRA
+    // Create a working clock on the top-right corner of the website to display the current time to the user (hint: Date obj & setInterval)
+
+    const getTime = function () {
+        let today = new Date();
+        let timeStamp = today.getHours() +  ":" +  today.getMinutes() + ":" + today.getSeconds();
+        let clockContainer = document.getElementById("clock-wrapper");
+        clockContainer.innerText = timeStamp;
+    }
+
+    let clockTick = setInterval(getTime, 1000);
+
+    // Create a countdown that displays the remaining time of an offer in the page (starting from 5 minutes),
+    // to give a sense of urgency to the user to book an appartment before the offer ends.
+    
+    // The countdown should appear in a modal after 1 minute from the page load.
+    // Display an alert when the time is up.
+
+    // Find a way to reuse the same modal with different information passed in, instead of creating multiple modals with different IDs.
