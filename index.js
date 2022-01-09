@@ -284,3 +284,42 @@ for (i = 0; i < 4; i++) {
     let timeStampSpan = document.createElement("span");
     timeStampSpan.innerText = timeStamp;
     timeStampContainer[0].prepend(timeStampSpan); */
+
+      // EXERCISE 6
+    // The search fields include: Location, Check-in date, Check-out date, Number of guests. You've displayed the first one in the H1 field on EX 1 already.
+    // Let's use the rest of the data in this way; when the user clicks the search button:
+    // - Create a list below the H1.
+    // - get the values from the date inputs and format them to display list items with the check-in & check-out dates as:
+    //      Check in: 25/07/2021
+    //      Check out: 30/07/2021
+    // - and the number of guests the user have selected in another list item.
+    //      Guests: 2
+
+    let checkIn = document.getElementById("date-input-1");
+    let checkOut = document.getElementById("date-input-1");
+    let guests = document.getElementById("input-guests");
+    let searchButton = document.getElementById("search-button");
+    console.log(checkIn);
+    console.log(checkOut);
+    console.log(guests);
+    console.log(searchButton);
+    console.log(locInput);
+    
+    searchButton.addEventListener('click', function () {
+        let searchRecap = document.getElementById("filters");
+        let newDivCity = document.createElement("div");
+        let newDivCheckIn = document.createElement("div");
+        let newDivCheckOut = document.createElement("div");
+        let newDivGuests = document.createElement("div");
+
+        newDivCity.innerText = "Destination: " + locInput.value;
+        newDivCheckIn.innerText = "Check-in date: " + checkIn.value;
+        newDivCheckOut.innerText = "Check-out date: " + checkOut.value;
+        newDivGuests.innerText = "Guests: " + guests.value;
+        
+        searchRecap.appendChild(newDivCity);
+        searchRecap.appendChild(newDivCheckIn);
+        searchRecap.appendChild(newDivCheckOut);
+        searchRecap.appendChild(newDivGuests);
+
+    });    
