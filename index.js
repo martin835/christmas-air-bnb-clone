@@ -6,14 +6,14 @@
     // Take the value from the city input field and display it in an H1 on the center of the Hero content, on top of the image.
     // The letter should appear one by one while the user types them in the input.
 
-let loc = document.getElementById("location-input");
+let locInput = document.getElementById("location-input");
 let locOutput = document.getElementById("location-output");
 
 const showCity = function() {
-    locOutput.innerText = loc.value;    
+    locOutput.innerText = locInput.value;    
 }
 
-loc.addEventListener("keyup", showCity);
+locInput.addEventListener("keyup", showCity);
 
 // EXERCISE 2
     // Create an array of objects for each city you can think of. Each one should look like the following:
@@ -110,3 +110,106 @@ const cities = [
     // If it's found, use the img property as the new source for the background image of the hero section.
     
     // What you should see in the end is: the image of the city as background and the name of the city as the H1 title on top of it.
+
+locInput.addEventListener("change", function(e) {
+    const value = e.target.value;
+    console.log(value.toLowerCase());
+    const heroImgLandscape = document.getElementById("hero-landscape-lg-pic");
+    console.log(heroImgLandscape);
+
+    for (let i = 0; i < cities.length; i++) {
+        if (value.toLowerCase() === cities[i].city.toLowerCase()) {
+          heroImgLandscape.srcset = cities[i].img;
+        }
+    }
+});
+
+  // EXERCISE 4
+    // create new arrays with similar structure [{img: "http://...", text: "lorem ipsum"}, {...}, {...}]
+    // for every section in the homepage that has text+image and make it so
+    // that every section which contains img+text gets generated in a randomized order on every page refresh.
+
+
+const exploreNearbyOffers = [
+  {
+    city: "Milan",
+    text: "1-hour drive",
+    img: "airbnb/assets/imgs/homepage/milan.jpg",
+  },
+  {
+    city: "Turin",
+    text: "2.5-hour drive",
+    img: "airbnb/assets/imgs/homepage/turin.png",
+  },
+  {
+    city: "Venice",
+    text: "4.5-hour drive",
+    img: "airbnb/assets/imgs/homepage/venice.jpg",
+  },
+  {
+    city: "Verona",
+    text: "2.5-hour drive",
+    img: "airbnb/assets/imgs/homepage/verona.png",
+  },
+  {
+    city: "Florence",
+    text: "4-hour drive",
+    img: "airbnb/assets/imgs/homepage/florence.png",
+  },
+  {
+    city: "Genoa",
+    text: "3-hour drive",
+    img: "airbnb/assets/imgs/homepage/genoa.png",
+  },
+  {
+    city: "Bologna",
+    text: "3-hour drive",
+    img: "airbnb/assets/imgs/homepage/bologna.png",
+  },
+  {
+    city: "La Spezia",
+    text: "3.5-hour drive",
+    img: "airbnb/assets/imgs/homepage/La-Spezia.jpg",
+  },
+];
+
+let exploreNearbyContainer = document.getElementById("explore-nearby");
+
+let randomUniqueNumbersArray = [];
+
+
+do {
+  let randomNumber = Math.floor(Math.random() * (exploreNearbyOffers.length));
+  if (!randomUniqueNumbersArray.includes(randomNumber)) {
+    randomUniqueNumbersArray.push(randomNumber);
+  }
+} while (randomUniqueNumbersArray.length < 8);
+
+
+
+console.log(randomUniqueNumbersArray);
+console.log("Lenght is: " + randomUniqueNumbersArray.length);
+
+for (i = 0; i < 4; i++) {
+    let randomItem = randomUniqueNumbersArray[i];
+    let randomItem2 = randomUniqueNumbersArray[randomUniqueNumbersArray.length - (i+1)];
+    console.log("Random item 1: " + randomItem + typeof(randomItem));
+    console.log("Random item 2: " + randomItem2);
+    exploreNearbyContainer.innerHTML += `<div class="col pr-5">
+                    <div class="card-small d-flex">
+                        <img src=${exploreNearbyOffers[randomItem].img} alt="">
+                        <div class="align-self-end pl-3">
+                            <h5>${exploreNearbyOffers[randomItem].city}</h5>
+                            <p>${exploreNearbyOffers[randomItem].text}</p>
+                        </div>
+                    </div>
+                    <div class="card-small d-flex">
+                        <img src=${exploreNearbyOffers[randomItem2].img} alt="">
+                        <div class="align-self-end pl-3">
+                            <h5>${exploreNearbyOffers[randomItem2].city}</h5>
+                            <p>${exploreNearbyOffers[randomItem2].text}</p>
+                        </div>
+                    </div>
+                </div>`;
+}
+
