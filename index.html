@@ -88,7 +88,7 @@
         <div class="d-flex flex-column align-items-center wrapper-01">
                 <p id="location-output">Not sure where to go?</p>
                 <p>Perfect</p>
-                <button class="px-5 shadow p-2 mb-5 bg-white rounded">I'm flexible</button>
+                <button id="flexible-button" data-toggle="modal" data-target="#flexible-modal" class="px-5 shadow p-2 mb-5 bg-white rounded">I'm flexible</button>
         </div>
 
         <div class="container explore-nearby">
@@ -473,7 +473,28 @@
                 </div>
             </div>
         </div>
-   
+        
+        <!-- MODAL1 -->
+
+        <div class="modal fade" id="flexible-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title-city">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-picture-container">
+                    <img src="" id="modal-picture" alt="random-city" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </div>
+            </div>
+        </div>
    
    <!-- My JS -->
 

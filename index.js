@@ -299,13 +299,8 @@ for (i = 0; i < 4; i++) {
     let checkOut = document.getElementById("date-input-1");
     let guests = document.getElementById("input-guests");
     let searchButton = document.getElementById("search-button");
-    console.log(checkIn);
-    console.log(checkOut);
-    console.log(guests);
-    console.log(searchButton);
-    console.log(locInput);
     
-    searchButton.addEventListener('click', function () {
+    searchButton.addEventListener("click", function () {
         let searchRecap = document.getElementById("filters");
         let newDivCity = document.createElement("div");
         let newDivCheckIn = document.createElement("div");
@@ -323,3 +318,19 @@ for (i = 0; i < 4; i++) {
         searchRecap.appendChild(newDivGuests);
 
     });    
+
+     // EXERCISE 7
+    // On the "I'm flexible" button that you have in the page, attach the functionality to open a modal that displays
+    // a random city and image from the first array that you've created.
+
+    let flexibleButton = document.getElementById("flexible-button");
+    console.log(flexibleButton);
+
+    flexibleButton.addEventListener("click", function() {
+        let randomNumber = Math.floor(Math.random() * cities.length);
+        let cityName = document.getElementById("modal-title-city");
+        let cityImage = document.getElementById("modal-picture");
+        cityName.innerText = cities[randomNumber].city;
+        cityImage.src = cities[randomNumber].img;
+
+    });
