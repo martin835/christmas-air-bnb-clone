@@ -122,6 +122,26 @@ locInput.addEventListener("change", function(e) {
           heroImgLandscape.srcset = cities[i].img;
         }
     }
+
+
+    let today = new Date();
+    let timeStamp =
+      today.getDate() +
+      "/" +
+      today.getMonth() +
+      1 +
+      "/" +
+      today.getFullYear() +
+      " — " +
+      today.getHours() +
+      ":" +
+      today.getMinutes() +
+      ":" +
+      today.getSeconds();
+    let timeStampContainer = document.getElementsByClassName("wrapper-01");
+    let timeStampSpan = document.createElement("span");
+    timeStampSpan.innerText = timeStamp;
+    timeStampContainer[0].prepend(timeStampSpan);
 });
 
   // EXERCISE 4
@@ -187,14 +207,14 @@ do {
 
 
 
-console.log(randomUniqueNumbersArray);
-console.log("Lenght is: " + randomUniqueNumbersArray.length);
+/* console.log(randomUniqueNumbersArray);
+console.log("Lenght is: " + randomUniqueNumbersArray.length); */
 
 for (i = 0; i < 4; i++) {
     let randomItem = randomUniqueNumbersArray[i];
     let randomItem2 = randomUniqueNumbersArray[randomUniqueNumbersArray.length - (i+1)];
-    console.log("Random item 1: " + randomItem + typeof(randomItem));
-    console.log("Random item 2: " + randomItem2);
+    /* console.log("Random item 1: " + randomItem + typeof(randomItem));
+    console.log("Random item 2: " + randomItem2); */
     exploreNearbyContainer.innerHTML += `<div class="col pr-5">
                     <div class="card-small d-flex">
                         <img src=${exploreNearbyOffers[randomItem].img} alt="">
@@ -213,3 +233,54 @@ for (i = 0; i < 4; i++) {
                 </div>`;
 }
 
+// EXERCISE 5
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date
+    //
+    // Create a Date object via JavaScript and format it to have a date looking like this: "09/07/2021, 12:51:15"
+    // Apply it in a <span> above the <h1> to show to the user the date and time of the search, but instead of the comma, separate the two with an em dash: — like so: "09/07/2021 — 12:51:15"
+    // (you can create the em dash with a combination on the numpad that is: ALT + 0151)
+    
+  /*   let today = new Date();
+
+    console.log(today);
+    console.log(today.getDate());
+    console.log(today.getMonth()+1);
+    console.log(today.getFullYear());
+    console.log(today.getHours());
+    console.log(today.getMinutes());
+    console.log(today.getSeconds());
+
+    console.log(
+      today.getDate() +
+        "/" +
+        today.getMonth() +
+        1 +
+        "/" +
+        today.getFullYear() +
+        " — " +
+        today.getHours() +
+        ":" +
+        today.getMinutes() +
+        ":" +
+        today.getSeconds()
+    );
+
+    let timeStamp =  today.getDate() +
+        "/" +
+        today.getMonth() +
+        1 +
+        "/" +
+        today.getFullYear() +
+        " — " +
+        today.getHours() +
+        ":" +
+        today.getMinutes() +
+        ":" +
+        today.getSeconds()
+
+    console.log(timeStamp);
+
+    let timeStampContainer = document.getElementsByClassName("wrapper-01");
+    let timeStampSpan = document.createElement("span");
+    timeStampSpan.innerText = timeStamp;
+    timeStampContainer[0].prepend(timeStampSpan); */
