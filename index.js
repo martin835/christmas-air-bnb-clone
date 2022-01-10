@@ -338,7 +338,7 @@ for (i = 0; i < 4; i++) {
 
     const getTime = function () {
         let today = new Date();
-        let timeStamp = today.getHours() +  ":" +  today.getMinutes() + ":" + today.getSeconds();
+        let timeStamp = ("0"+ today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2) + ":" + ("0" + today.getSeconds()).slice(-2);
         let clockContainer = document.getElementById("clock-wrapper");
         clockContainer.innerText = timeStamp;
     }
@@ -349,6 +349,8 @@ for (i = 0; i < 4; i++) {
     // to give a sense of urgency to the user to book an appartment before the offer ends.
 
    
+//HOW TO DO IT HERE: https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
+
    function getTimeRemaining(endtime) {
      const total = Date.parse(endtime) - Date.parse(new Date());
      const seconds = Math.floor((total / 1000) % 60);
@@ -369,16 +371,19 @@ for (i = 0; i < 4; i++) {
    
     function initializeClock(id, endtime) {
       const clock = document.getElementById(id);
-      const timeinterval = setInterval(() => {
+      function updateClock() {
         const t = getTimeRemaining(endtime);
-        clock.innerHTML = t.minutes +":" + t.seconds;
+        clock.innerHTML = ("0" + t.minutes).slice(-2) + ":" + ("0" + t.seconds).slice(-2);
         if (t.total <= 0) {
           clearInterval(timeinterval);
         }
-      }, 1000);
+      }
+
+      updateClock(); // run function once at first to avoid delay
+      let timeinterval = setInterval(updateClock, 1000);
     }
 
-    const timeInMinutes = 5;
+    const timeInMinutes = 5 ;
     const currentTime = Date.parse(new Date());
     const deadline = new Date(currentTime + timeInMinutes * 60 * 1000);
 
