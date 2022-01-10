@@ -121,6 +121,11 @@
     margin-top: 183px;   
 }
 
+.countdown-5-min {
+    color: red;
+    font-size: 0.8rem;
+}
+
 @media screen and (min-width: 992px) {
 
     .explore-nearby {
