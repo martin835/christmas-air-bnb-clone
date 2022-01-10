@@ -383,13 +383,59 @@ for (i = 0; i < 4; i++) {
       let timeinterval = setInterval(updateClock, 1000);
     }
 
-    const timeInMinutes = 5 ;
+    let timeInMinutes = 5 ;
     const currentTime = Date.parse(new Date());
     const deadline = new Date(currentTime + timeInMinutes * 60 * 1000);
 
-    initializeClock("clockdiv", deadline);
+   
     
     // The countdown should appear in a modal after 1 minute from the page load.
     // Display an alert when the time is up.
 
+    const inactivityCountDown = function () {
+      let modalReference = document.getElementById("flexible-modal");  
+      let randomNumber = Math.floor(Math.random() * cities.length);
+      let cityImage = document.getElementById("modal-picture");   
+      let oldTimer = document.getElementsByClassName("countdown-5-min");
+      oldTimer[0].remove();
+      /* CHANGING MODAL TITLE */
+      let modalTitle = document.getElementById("modal-title-city");
+      modalTitle.innerHTML = `<span>Limited offer, only immediate purchase - ${cities[randomNumber].city} for 5€</span>`;
+      cityImage.src = cities[randomNumber].img;
+      /* CREATE NEW TIMER */
+      let modalBodyContainer = document.getElementById("modal-picture-container");
+      let newTimerContainer = document.createElement("div");
+      newTimerContainer.innerHTML = `<span>Expires in: </span><span id="clockdiv"></span>`;
+      modalBodyContainer.prepend(newTimerContainer);
+      timeInMinutes = 1;
+      initializeClock("clockdiv", deadline);
+
+      /* CHANGING BUTTONS TEXT */
+      let closeButton = document.querySelector(".modal-footer .btn-secondary");
+      let buyButton = document.querySelector(".modal-footer .btn-primary");
+      closeButton.innerText = "Leave";
+      buyButton.innerText = "Buy now!";
+      /* THIS SHOW AND HIDES THE MODAL */
+      modalReference.classList.toggle("show");        
+
+      if (modalReference.style.display === "") {
+        modalReference.style.display = "block";
+      } else {
+        modalReference.style.display = "";
+      }
+      /* HIDE MODAL WHEN CLOSE/LEAVE BUTTON IS CLICKED */
+      closeButton.addEventListener("click", function(){
+        modalReference.classList.toggle("show");
+        modalReference.style.display = "";
+      });
+    };
+
+   
+
+    let showInactivityCountDown = setInterval (inactivityCountDown, 10000);
+
     // Find a way to reuse the same modal with different information passed in, instead of creating multiple modals with different IDs.
+
+    window.addEventListener("load", (event) => {
+       initializeClock("clockdiv", deadline);
+    });
